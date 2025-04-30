@@ -1,0 +1,15 @@
+:root {
+  --main-color: #231f42;
+  --btn-color: #37aeab;
+  --heading-color: #f56b9a;
+}
+
+nav button {
+  background-color: var(--heading-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  width: 33%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}

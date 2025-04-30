@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Sansita One";
+  src: url("./assets/fonts/SansitaOne.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-color: #231f42;
+  --btn-color: #37aeab;
+  --heading-color: #f56b9a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  font-family: "Sansita One";
+  color: var(--heading-color);
+  font-weight: 400;
+}
+
+.home__wrapper {
+  background-color: var(--main-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logo {
+  width: 182px;
+  height: 178px;
+  margin: 0 auto;
+}
+
+.home__company__subheading {
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.home__ticket__subheading {
+  color: #fff;
+  font-style: italic;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  text-shadow: 1px 1px 0px #000;
+  line-height: normal;
+}
+
+.eventList h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #fff;
+}
+
+.event {
+  display: flex;
+  margin-bottom: 25px;
+  padding: 0 32px;
+  color: #fff;
+}
+
+.event__inner {
+  text-align: left;
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.divider {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 1px;
+  width: 100%;
+  margin-top: 0.2rem;
+}
+
+.event__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 1rem;
+  width: 66px;
+}
+
+.event__time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event__price {
+  color: #37aeab;
+  font-family: "Fira Sans";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.event__place {
+  padding: 3px 0;
+  color: rgba(255, 255, 255, 0.8);
+}

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import useEventsStore from "../../store/useEventsStore";
+import useEventsStore from "../../store/eventsStore";
 import { Link } from "react-router-dom";
 
 function EventList() {

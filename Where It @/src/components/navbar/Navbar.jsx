@@ -3,17 +3,19 @@ import "./navbar.css";
 
 function Navbar() {
   return (
-    <nav className="nav">
-      <Link to="/">
-        <button>Home</button>
-      </Link>
-      <Link to="/events">
-        <button>Events</button>
-      </Link>
-      <Link to="/order">
-        <button>Order</button>
-      </Link>
-    </nav>
+    <section>
+      <nav className="nav">
+        <Link to="/">
+          <button>Home</button>
+        </Link>
+        <Link to="/events">
+          <button>Events</button>
+        </Link>
+        <Link to="/order">
+          <button>Order</button>
+        </Link>
+      </nav>
+    </section>
   );
 }
 

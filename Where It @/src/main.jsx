@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home.jsx";
 import Events from "./pages/Events.jsx";
 import Order from "./pages/Order.jsx";
+import Ticket from "./pages/Ticket.jsx";
 import EventDetail from "./components/eventdetail/EventDetail.jsx";
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/event",
     element: <EventDetail />,
+  },
+  {
+    path: "/ticket",
+    element: <Ticket />,
   },
 ]);
 

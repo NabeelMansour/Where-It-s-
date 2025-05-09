@@ -22,7 +22,8 @@ function Tickets() {
         to: cartItem.when.to,
         section: section,
         seat: seat + i,
-        id: selectedEvents.id,
+        id: cartItem.id,
+        code: cartItem.id.slice(0, 5).toUpperCase(),
       };
       tickets.push(ticket);
     }
@@ -61,7 +62,7 @@ function Tickets() {
         </div>
         <div className="ticket__barcode">
           <img src={barcode} alt={barcode} />
-          <span></span>
+          <span>{element.code}</span>
         </div>
       </article>
     );

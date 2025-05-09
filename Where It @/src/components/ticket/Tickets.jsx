@@ -1,12 +1,14 @@
 import useEventCheckoutStore from "../../store/eventCheckoutStore";
 import "./tickets.css";
 import barcode from "../../assets/images/barcode.png";
+import { v4 as uuidv4 } from "uuid";
 
 function Tickets() {
   const { selectedEvents } = useEventCheckoutStore();
 
   const tickets = [];
   const sections = ["A", "B", "C", "D"];
+  const barcodeId = uuidv4().slice(0, 5);
 
   selectedEvents.forEach((cartItem) => {
     let section = sections[Math.floor(Math.random() * sections.length)];
@@ -23,7 +25,6 @@ function Tickets() {
         section: section,
         seat: seat + i,
         id: cartItem.id,
-        code: cartItem.id.slice(0, 5).toUpperCase(),
       };
       tickets.push(ticket);
     }
@@ -62,7 +63,7 @@ function Tickets() {
         </div>
         <div className="ticket__barcode">
           <img src={barcode} alt={barcode} />
-          <span>{element.code}</span>
+          <span>{barcodeId}</span>
         </div>
       </article>
     );
